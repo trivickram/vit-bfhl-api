@@ -2,11 +2,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 const { alternateCapsReverse } = require('./utils');
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use(express.static(__dirname));
 
 const FULL_NAME = 'baratam_trivickram'; 
 const DOB = '06012005'; 
@@ -24,9 +27,11 @@ function isAlphabet(str) {
 function isSpecialChar(str) {
   return !isNumber(str) && !isAlphabet(str);
 }
-
-
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/api', (req, res) => {
   res.status(200).json({
     message: "VIT BFHL API is running!",
     endpoints: {
