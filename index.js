@@ -8,9 +8,8 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Personal Details - BARATAM TRIVICKRAM
-const FULL_NAME = 'baratam_trivickram'; // lowercase as per requirement
-const DOB = '21092003'; // Please update with your actual DOB in ddmmyyyy format
+const FULL_NAME = 'baratam_trivickram'; 
+const DOB = '06012005'; 
 const EMAIL = 'trivickrambaratam@gmail.com';
 const ROLL_NUMBER = '22BEC1392';
 
