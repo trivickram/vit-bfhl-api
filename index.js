@@ -8,10 +8,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const FULL_NAME = 'john_doe'; 
-const DOB = '17091999';
-const EMAIL = 'john@xyz.com';
-const ROLL_NUMBER = 'ABCD123';
+// Personal Details - BARATAM TRIVICKRAM
+const FULL_NAME = 'baratam_trivickram'; // lowercase as per requirement
+const DOB = '21092003'; // Please update with your actual DOB in ddmmyyyy format
+const EMAIL = 'trivickrambaratam@gmail.com';
+const ROLL_NUMBER = '22BEC1392';
 
 function isNumber(str) {
   return /^\d+$/.test(str);
