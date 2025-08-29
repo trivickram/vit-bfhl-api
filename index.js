@@ -25,7 +25,7 @@ function isSpecialChar(str) {
   return !isNumber(str) && !isAlphabet(str);
 }
 
-// GET route for root path
+
 app.get('/', (req, res) => {
   res.status(200).json({
     message: "VIT BFHL API is running!",
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// GET route for bfhl (optional - for testing)
+
 app.get('/bfhl', (req, res) => {
   res.status(200).json({
     operation_code: 1
