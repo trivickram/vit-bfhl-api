@@ -38,8 +38,6 @@
 
 ## 🎯 Project Overview
 
-### What is BFHL?
-**BFHL** stands for "**Build and Host a Logic**" - a comprehensive full-stack assessment designed by VIT to evaluate students' ability to design, develop, and deploy production-ready REST APIs.
 
 ### Project Mission
 Create a robust, scalable REST API that processes mixed data arrays and categorizes elements based on specific business rules, demonstrating mastery of:
